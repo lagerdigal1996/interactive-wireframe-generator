@@ -20,7 +20,9 @@ app.use((err, req, res, next) => {
     res.status(500).send('Something broke!');
 });
 
+// Set the port for the server to listen on
 const PORT = process.env.PORT || 5000;
+// Start the server and log the port
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
